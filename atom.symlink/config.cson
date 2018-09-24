@@ -1,56 +1,53 @@
 "*":
-  core:
-    closeDeletedFileTabs: true
-    closeEmptyWindows: false
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "atom-beautify"
-      "php-cs-fixer"
-      "prettier-atom"
-      "minimap"
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+    "atom-ide-datatip":
+      datatipDebounceDelay: 75
+    "atom-ide-find-references":
+      defaultLocationForPane: "right"
+  "autoclose-html":
+    forceBlock: [
+      "head"
+      "ion-list"
+      "ion-item"
     ]
-    followSymlinks: false
-    hideGitIgnoredFiles: true
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
+  core:
+    disabledPackages: [
+      "minimap"
+      "node-debugger"
+      "atom-ide-debugger-node"
+      "refactor"
+      "language-pug"
+      "js-refactor"
+      "linter"
     ]
     telemetryConsent: "no"
-  editor:
-    fontFamily: "FiraCode-Retina"
-    invisibles: {}
-    showIndentGuide: true
-    showInvisibles: true
-    softWrapAtPreferredLineLength: true
-    tabLength: 4
-  "linter-phpcs":
-    autoConfigSearch: false
-    autoExecutableSearch: false
-    codeStandardOrConfigFile: "WordPress-VIP"
-    executablePath: "/Users/ginatrapani/.composer/vendor/bin/phpcs"
-    showSource: false
-    tabWidth: 4
-  "linter-ui-default":
-    panelHeight: 69
-  minimap:
-    absoluteMode: true
-    displayCodeHighlights: false
-    displayMinimapOnLeft: true
-  "php-cs-fixer":
-    executablePath: "/usr/local/bin/php-cs-fixer"
-    rules: "@Symfony"
-    showInfoNotifications: true
-  "prettier-atom":
-    formatOnSaveOptions:
-      enabled: true
-    useEslint: true
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+  "exception-reporting":
+    userId: "1bdc2b1a-c4b4-41ba-8f99-942b4e6f26ce"
+  "linter-ui-default": {}
+  pigments:
+    autocompleteScopes: [
+      ".source.css"
+      ".source.css.less"
+      ".source.sass"
+      ".source.css.scss"
+      ".source.stylus"
+      ".source.scss"
+    ]
+  "platformio-ide-terminal":
+    style:
+      theme: "homebrew"
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+    hideProjectTab: true
+    hideTitleBar: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false

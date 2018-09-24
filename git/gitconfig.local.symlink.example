@@ -1,9 +1,0 @@
-[user]
-	name = Gina Trapani
-	email = ginatrapani@gmail.com
-[credential]
-	helper = osxkeychain
-[diff]
-	tool = atom
-[core]
-	editor = atom --wait
